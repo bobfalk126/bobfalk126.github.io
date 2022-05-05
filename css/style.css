@@ -17,6 +17,82 @@ body {
 	text-shadow: none;
 }
 
+@media (min-width: 763px) {
+	#navWrapper {
+		display: flex;
+	  align-items: center;
+	}
+
+	#containerWrapper {
+		display: flex;
+	  justify-content: center;
+	}
+
+	#navUl {
+		display: flex;
+	}
+}
+
+.navButton {
+	cursor: pointer;
+}
+
+#section-learn-more {
+	background: rgb(42, 112, 173);
+	padding: 50px 0 50px 0;
+}
+
+#section-about-bio {
+	background: #2ad1d9;
+	padding: 50px 0 50px 0;
+}
+
+#section-summer-programming {
+	background: rgb(42, 112, 173);
+	padding: 50px 0 50px 0;
+}
+
+.learnMoreTitle {
+	text-align: left;
+  color: white;
+}
+
+.learnMore {
+	color: white;
+	margin-left: 50px; 
+}
+
+.blackContainer {
+	text-align: left;
+	color: black;
+}
+
+.blackTitle {
+	color: black;
+}
+
+.learnMoreLi {
+	max-width: 900px;
+	text-align: left;
+}
+
+.smallImage {
+	width: 440px;
+}
+
+.centerImg {
+	display: flex;
+  justify-content: center;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+.imageContainer {
+	display: flex;
+}
+
 .clear {
 	clear: both;
 }
