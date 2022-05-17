@@ -14,33 +14,44 @@
 	
 	// local scroll
 	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
-
+  const navbar = document.getElementById('dropdownNavBar')
+  const hamburger = document.getElementById('Hamburger');
+  function removeNav() {
+      navbar.classList.remove('in');
+      navbar.style.height = '1px';
+      hamburger.classList.add('collapsed');
+  }
   $("#learnMoreNav").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#section-learn-more").offset().top - 98
       }, 2000);
+      removeNav();
   });
   $("#aboutNav").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#section-about-bio").offset().top - 90
       }, 2000);
+      removeNav();
   });
   $("#testimonialsNav").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#section-testimonials").offset().top - 90
       }, 2000);
+      removeNav();
   });
 	
   $("#summerProgrammingNav").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#section-summer-programming").offset().top - 90
       }, 2000);
+      removeNav();
   });
-  
+
   $("#reserveYourSpotNav").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#section-reserve-your-spot").offset().top - 90
       }, 2000);
+      removeNav();
   });
 	// portfolio
     if($('.isotopeWrapper').length){
