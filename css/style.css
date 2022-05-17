@@ -39,8 +39,7 @@ body {
 @media (max-width: 992px) {
 	.imageContainer {
 		flex-direction: column;
-				padding: 20px;
-
+		padding: 20px;
 	}
 	.textRight {
 		margin-left: 0px;
