@@ -14,7 +14,8 @@
 	
 	// local scroll
 	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
-  const navbar = document.getElementById('dropdownNavBar')
+  const navbar = document.getElementById('dropdownNavBar');
+  const navWrapper = document.getElementById('navWrapper');
   const hamburger = document.getElementById('Hamburger');
   function removeNav() {
       navbar.classList.remove('in');
@@ -23,33 +24,33 @@
   }
   $("#learnMoreNav").click(function() {
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#section-learn-more").offset().top - 98
+          scrollTop: $("#section-learn-more").offset().top - navWrapper.offsetHeight
       }, 2000);
       removeNav();
   });
   $("#aboutNav").click(function() {
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#section-about-bio").offset().top - 90
+          scrollTop: $("#section-about-bio").offset().top - navWrapper.offsetHeight
       }, 2000);
       removeNav();
   });
   $("#testimonialsNav").click(function() {
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#section-testimonials").offset().top - 90
+          scrollTop: $("#section-testimonials").offset().top - navWrapper.offsetHeight
       }, 2000);
       removeNav();
   });
 	
   $("#summerProgrammingNav").click(function() {
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#section-summer-programming").offset().top - 90
+          scrollTop: $("#section-summer-programming").offset().top - navWrapper.offsetHeight
       }, 2000);
       removeNav();
   });
 
   $("#reserveYourSpotNav").click(function() {
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#section-reserve-your-spot").offset().top - 90
+          scrollTop: $("#section-reserve-your-spot").offset().top - navWrapper.offsetHeight
       }, 2000);
       removeNav();
   });
